@@ -1,0 +1,16 @@
+* {
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+/* navigation bar */
+.navbar .navbar-nav li a {
+    font-size: .73rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: ease all .3s;
+    color: #1C2331;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #ff4081;
+}
