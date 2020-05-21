@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pizza;
 
 class PizzasController extends Controller
 {
@@ -13,9 +14,12 @@ class PizzasController extends Controller
      */
     public function index()
     {
+
+        # get pizzas
+        $pizzas = Pizza::orderBy('created_at', 'desc')->get();
         
         # return view
-        return view('pizzas.index');
+        return view('pizzas.index')->with('pizzas', $pizzas);
 
     }
 
