@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light red lighten-5 shadow-sm">
     <div class="container">
         <a class="navbar-brand outline-none d-flex align-items-center" href="{{ url('/') }}">
-            <img src="{{ asset('img/icons/pizza3.png') }}" class="h-12" alt="Pizza House Logo">
+            <img src="{{ asset('img/icons/logo3.png') }}" class="h-12" alt="Pizza House Logo">
             <span class="uppercase font-weight-bold">
                 Pizza <span class="red-text">House</span>
             </span>

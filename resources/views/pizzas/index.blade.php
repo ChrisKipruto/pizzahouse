@@ -10,10 +10,10 @@
                 @foreach ($pizzas as $pizza)
                     <!-- pizza image -->
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
-                        <div class="view overlay z-depth-2 rounded zoom">
-                            <img src="{{ asset('img/pizza2.jpg') }}" class="img-fluid" alt="Pizza Image">
+                        <div class="view overlay zoom z-depth-2 rounded">
+                            <img src="{{ asset('img/pizza6.jpg') }}" class="img-fluid" alt="Pizza Image">
                             <a href="/pizzas/{{ $pizza->id }}">
-                                <div class="mask rgba-black-light"></div>
+                                <div class="mask rgba-red-slight"></div>
                             </a>
                         </div>
 

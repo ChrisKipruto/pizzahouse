@@ -33,7 +33,7 @@
     <!-- fav icon -->
     <link rel="shortcut icon" href="{{ asset('img/icons/pizza3.png') }}" type="image/x-icon">
 </head>
-<body class="bg-gray-200">
+<body class="bg-red-100">
     <div id="app">
         <header>
             @include('includes.nav')
