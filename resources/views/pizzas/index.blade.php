@@ -11,7 +11,7 @@
                     <!-- pizza image -->
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
                         <div class="view overlay z-depth-2 rounded zoom">
-                            <img src="{{ asset('img/pizza1.jpg') }}" class="img-fluid" alt="Pizza Image">
+                            <img src="{{ asset('img/pizza2.jpg') }}" class="img-fluid" alt="Pizza Image">
                             <a href="#!">
                                 <div class="mask rgba-black-light"></div>
                             </a>
@@ -19,7 +19,7 @@
 
                         <div class="text-center px-3 mt-3">
                             <!-- Category -->
-                            <a href="#!" class="orange-text">
+                            <a href="#!" class="red-text">
                                 <h6 class="font-weight-bold mb-3 hover:text-red-600"><i class="fas fa-utensils pr-2"></i>Pizza</h6>
                             </a>
 
@@ -37,11 +37,12 @@
                             </p>
 
                             <!-- Get Started button -->
-                            <a class="btn btn-warning btn-md">Read more</a>
+                            <a class="btn danger-color white text font-bold btn-md">Read more</a>
                         </div>
                     </div>
                     <!-- end pizza image -->
                 @endforeach
+                {{ $pizzas->links() }}
             @else
                 <!-- pizza image -->
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">

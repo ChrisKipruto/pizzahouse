@@ -3,7 +3,7 @@
         <a class="navbar-brand outline-none d-flex align-items-center" href="{{ url('/') }}">
             <img src="{{ asset('img/icons/pizza3.png') }}" class="h-12" alt="Pizza House Logo">
             <span class="uppercase font-weight-bold">
-                Pizza <span class="orange-text">House</span>
+                Pizza <span class="red-text">House</span>
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -47,7 +47,7 @@
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item  outline-none"">
-                            <a class="nav-link px-3 rounded-sm orange accent-2 white-text shadow-md" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link px-3 rounded-sm red accent-2 white-text shadow-md" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     @endif
                 @else

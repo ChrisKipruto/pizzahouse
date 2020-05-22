@@ -14,3 +14,7 @@
 .navbar .navbar-nav li a:hover {
     color: #ff4081;
 }
+
+.pagination .active .page-link {
+    background-color: #CC0000 !important;
+}

@@ -16,7 +16,7 @@ class PizzasController extends Controller
     {
 
         # get pizzas
-        $pizzas = Pizza::orderBy('created_at', 'desc')->get();
+        $pizzas = Pizza::orderBy('created_at', 'desc')->paginate(2);
         
         # return view
         return view('pizzas.index')->with('pizzas', $pizzas);
