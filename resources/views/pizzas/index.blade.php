@@ -12,32 +12,22 @@
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4">
                         <div class="view overlay z-depth-2 rounded zoom">
                             <img src="{{ asset('img/pizza2.jpg') }}" class="img-fluid" alt="Pizza Image">
-                            <a href="#!">
+                            <a href="/pizzas/{{ $pizza->id }}">
                                 <div class="mask rgba-black-light"></div>
                             </a>
                         </div>
 
                         <div class="text-center px-3 mt-3">
                             <!-- Category -->
-                            <a href="#!" class="red-text">
+                            <a href="/pizzas/{{ $pizza->id }}" class="red-text">
                                 <h6 class="font-weight-bold mb-3 hover:text-red-600"><i class="fas fa-utensils pr-2"></i>Pizza</h6>
                             </a>
 
                             <!-- Post title -->
                             <h3 class="font-weight-bold mb-3"><strong>{{$pizza->type}}</strong></h3>
-                            
-                            <!-- Excerpt -->
-                            <p class="mb-3 dark-grey-text">
-                                {{ $pizza->base }}
-                            </p>
-
-                            <!-- Post data -->
-                            <p>by <a><strong>{{$pizza->name}}</strong></a>, 
-                                <?php echo $pizza->created_at->format('d/m/Y'); ?>
-                            </p>
 
                             <!-- Get Started button -->
-                            <a class="btn danger-color white text font-bold btn-md">Read more</a>
+                            <a href="/pizzas/{{ $pizza->id }}" class="btn danger-color white-text rounded-full font-bold btn-md">Read more</a>
                         </div>
                     </div>
                     <!-- end pizza image -->

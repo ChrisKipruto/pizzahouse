@@ -42,6 +42,14 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <footer class="text-center">
+            <h3 class="font-weight-bold mb-3">
+                <strong>
+                    Copyright &copy; <?php echo date('Y'); ?> PizzaHouse 
+                </strong>
+            </h3>
+        </footer>
     </div>
 
     <!-- jquery -->

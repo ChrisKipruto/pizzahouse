@@ -30,7 +30,10 @@ class PizzasController extends Controller
      */
     public function create()
     {
-        //
+
+        # return view
+        return view('pizzas.create');
+
     }
 
     /**
@@ -52,7 +55,13 @@ class PizzasController extends Controller
      */
     public function show($id)
     {
-        //
+
+        # get single pizza record
+        $pizza = Pizza::findOrFail($id);
+
+        # return view with model
+        return view('pizzas.show', ['pizza' => $pizza]);
+
     }
 
     /**
